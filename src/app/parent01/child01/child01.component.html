@@ -1,0 +1,8 @@
+<p>{{parentMessage}}</p>
+<!--use ng content for getting the html content from the parent-->
+<ng-content></ng-content>
+<div>
+<label><b>Event Emitter</b></label>
+<h4>present price::<input type="text" #price (keyup)="onChange(price.value)"/></h4>
+</div>
+

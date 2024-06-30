@@ -1,0 +1,17 @@
+<app-child01 (newPrice)="onchange($event)" [parentMessage]=message></app-child01>
+<!-- <app-child01>
+    <p>This is content projected(using ng-content) from the parent component.</p>
+</app-child01> -->
+<div>
+    <h4>price after 10Y::{{price}}</h4>
+</div><br>
+<div>
+    <label><b>Working of View Children</b></label>
+    <p #titles>View Children 01</p>
+    <p #titles>View Children 02</p>
+    <p #titles>View Children 03</p>
+    <button (click)="viewChildren()">view children</button>
+</div><br>
+<div><label><b>View Child Working</b></label><br>
+    <button (click)="viewChildFromParent()">View Child From Parent</button>
+</div>
